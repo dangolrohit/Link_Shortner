@@ -113,7 +113,13 @@
     font-size: 10px;
 }
 
+#lowerDiv{
+    visibility: hidden;
+}
 
+#infos{
+    margin-top: -60px;
+}
 
 
 

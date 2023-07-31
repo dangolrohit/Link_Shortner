@@ -7,6 +7,14 @@ function shortenURL() {
   const longUrlInput = document.getElementById("longUrl");
   const longURL = longUrlInput.value.trim();
 
+  const hideShow = document.getElementById('lowerDiv');
+  hideShow.style.visibility = "visible";
+
+  const inFos = document.getElementById('infos');
+  inFos.style.margin = "0px";
+
+
+
   if (longURL === "") {
     alert("Please enter a valid URL");
     return;
@@ -38,6 +46,7 @@ function copyShortUrlToClipboard() {
   const shortUrlInput = document.getElementById("shortUrl");
   const shortURL = shortUrlInput.value;
 
+
   if (shortURL === "") {
     alert("There is no shortened URL to copy.");
     return;
@@ -53,3 +62,6 @@ function copyShortUrlToClipboard() {
       alert("An error occurred while copying the URL to the clipboard.");
     });
 }
+
+
+
